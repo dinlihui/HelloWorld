@@ -8,10 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.URLEncoder;
 
-@WebServlet(name = "AdminLoginServlet", urlPatterns = "/admin/login")
-public class AdminLoginServlet extends HttpServlet {
+@WebServlet(name = "LoginServlet", urlPatterns = "/login")
+public class UserServlet extends HttpServlet {
 
     private UserService userService = new UserService();
 
@@ -28,12 +27,12 @@ public class AdminLoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        String result = userService.adminLogin(username, password,
+        String result = userService.login(username, password,
                 req.getSession());
         if ("1".equals(result)) {
-            resp.sendRedirect("/admin/main.jsp");
+            resp.sendRedirect("/main.jsp");
         } else {
-            req.getRequestDispatcher("/index.jsp?message=" + URLEncoder.encode(result, "utf-8")).forward(req, resp);
+            req.getRequestDispatcher("/index.jsp?message=" + result).forward(req, resp);
         }
     }
 }
