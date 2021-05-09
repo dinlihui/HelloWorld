@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="NIITDevelop">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/NIITDevelop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
