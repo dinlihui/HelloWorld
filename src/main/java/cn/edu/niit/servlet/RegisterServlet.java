@@ -1,6 +1,8 @@
 package cn.edu.niit.servlet;
 
+import cn.edu.niit.dao.LoginDao;
 import cn.edu.niit.javabean.User;
+import cn.edu.niit.service.RegisterService;
 import cn.edu.niit.service.UserService;
 
 import javax.servlet.ServletException;
@@ -10,14 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.sql.SQLException;
+
 
 /**
- * @program: Library
- * @ClassName: RegisterServlet
- * @description: Test
- * @author: Cai
- * @create: 2021-03-23 01:16
- **/
+ * @author Mister-Lu
+ */
 @WebServlet(name = "RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     UserService registerService = new UserService();
@@ -40,21 +40,18 @@ public class RegisterServlet extends HttpServlet {
         confirmPassword = req.getParameter("repassword");
         if (password != null && password.equals(confirmPassword)) {
             register = new User(userName, password, reader);
-
             result = registerService.register(register);
 
             //注册成功：——>跳转至登录页面进行登录
             //注册失败：——>注册页面提示：注册失败
-            if (result.equals("注册成功")) {
+            if ("注册成功".equals(result)) {
                 // 注册
                 resp.sendRedirect("/index.jsp?message=" + URLEncoder.encode(result, "utf-8"));
             } else {
                 req.getRequestDispatcher("/register.jsp?message=" + result).forward(req, resp);
-
             }
         } else {
-            req.getRequestDispatcher("/register.jsp?message=" +
-                    "两次密码不一致").forward(req, resp);
+            req.getRequestDispatcher("/register.jsp?message=" + "两次密码不一致").forward(req, resp);
         }
     }
 }

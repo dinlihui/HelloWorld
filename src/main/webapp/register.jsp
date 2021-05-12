@@ -1,10 +1,4 @@
-<%@ page import="com.mysql.cj.util.StringUtils" %><%--
-  Created by IntelliJ IDEA.
-  User: 86152
-  Date: 2021/3/22
-  Time: 13:21
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.mysql.cj.util.StringUtils" %>
 <%@page language="java" pageEncoding="utf-8" %>
 <html>
 <head>
@@ -12,7 +6,7 @@
     <link rel="stylesheet" href="./layui/css/layui.css">
     <style>
         .login-main {
-            width: 50%;
+            width: 30%;
             height: 50%;
             position: relative;
             top: 50%;
@@ -123,7 +117,7 @@
 <script src="./layui/layui.js"></script>
 <script>
     $('#rpwd').blur(function () {
-        if ($('#pwd').val() != $('#rpwd').val()) {
+        if ($('#pwd').val() !== $('#rpwd').val()) {
             $('#rpwr').removeAttr('hidden');
             $('#rpri').attr('hidden', 'hidden');
             layer.msg('两次输入密码不一致!');
@@ -131,7 +125,7 @@
             $('#rpri').removeAttr('hidden');
             $('#rpwr').attr('hidden', 'hidden');
         }
-        ;
+
     });
 
 </script>

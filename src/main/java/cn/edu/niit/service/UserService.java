@@ -6,12 +6,17 @@ import cn.edu.niit.javabean.User;
 
 import javax.servlet.http.HttpSession;
 
+/**
+ * @ClassName UserService
+ * @Description TODO
+ * @Author Mister-Lu
+ * @Date 2021/4/11
+ **/
 public class UserService {
 
     private UserDao userDao = new UserDao();
 
-    public String login(String username, String password,
-                        HttpSession session) {
+    public String login(String username, String password, HttpSession session) {
         User user = userDao.selectOne(username);
         if (user == null) {
             return "用户不存在";
@@ -26,8 +31,7 @@ public class UserService {
         }
     }
 
-    public String adminLogin(String username, String password,
-                             HttpSession session) {
+    public String adminLogin(String username, String password, HttpSession session) {
         Admin admin = userDao.selectOne(username, password);
         if (admin == null) {
             return "用户不存在";
@@ -49,5 +53,19 @@ public class UserService {
         } else {
             return "用户已存在";
         }
+    }
+    public User getUserInfo(String username) {
+        return userDao.selectOne(username);
+    }
+
+    public String uploadUserInfo(User user, HttpSession session) {
+        int result = 0;
+        result = userDao.updateOne(user);
+        if (result > 0) {
+            User userInfo = getUserInfo(user.getUsername());
+            session.setAttribute("user", userInfo);
+            return "更新成功";
+        }
+        return "更新失败";
     }
 }
