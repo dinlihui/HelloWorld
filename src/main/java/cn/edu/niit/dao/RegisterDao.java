@@ -8,9 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-/**
- * @author Mister-Lu
- */
+
 public class RegisterDao extends JDBCUtil{
     private Connection conn = null;
     private PreparedStatement ps=null;

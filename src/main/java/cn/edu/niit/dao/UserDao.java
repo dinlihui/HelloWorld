@@ -1,11 +1,6 @@
 package cn.edu.niit.dao;
 
-/**
- * @ClassName UserDao
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/11
- **/
+
 import cn.edu.niit.db.JDBCUtil;
 import cn.edu.niit.javabean.Admin;
 import cn.edu.niit.javabean.User;

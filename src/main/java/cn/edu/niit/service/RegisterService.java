@@ -7,9 +7,7 @@ import cn.edu.niit.javabean.User;
 import java.sql.SQLException;
 
 
-/**
- * @author Mister-Lu
- */
+
 public class RegisterService {
     private final RegisterDao registerDao = new RegisterDao();
     LoginDao loginDao = new LoginDao();

@@ -13,12 +13,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
-/**
- * @ClassName StoreBookServlet
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/21
- **/
+
 @WebServlet(name = "StoreBookServlet", urlPatterns = "/book/store")
 public class StoreBookServlet extends HttpServlet {
 

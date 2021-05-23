@@ -15,9 +15,7 @@ import java.net.URLEncoder;
 import java.sql.SQLException;
 
 
-/**
- * @author Mister-Lu
- */
+
 @WebServlet(name = "RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     UserService registerService = new UserService();

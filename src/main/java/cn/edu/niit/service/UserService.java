@@ -6,12 +6,7 @@ import cn.edu.niit.javabean.User;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * @ClassName UserService
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/11
- **/
+
 public class UserService {
 
     private UserDao userDao = new UserDao();

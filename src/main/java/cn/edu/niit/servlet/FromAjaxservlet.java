@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * @author Mister-Lu
- */
+
 @WebServlet("/FromAjaxservlet")
 public class FromAjaxservlet extends HttpServlet {
 
@@ -27,7 +25,7 @@ public class FromAjaxservlet extends HttpServlet {
       CloseableHttpClient httpClient = HttpClients.createDefault();
       //创建HttpGet对象,处理get请求,转发到A站点
       HttpGet httpGet =
-          new HttpGet("https://www.layui.com/demo/table/user/?page=1&limit=30");
+              new HttpGet("https://www.layui.com/demo/table/user/?page=1&limit=30");
       //执行
       CloseableHttpResponse response = httpClient.execute(httpGet);
       int code = response.getStatusLine().getStatusCode();

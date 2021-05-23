@@ -7,7 +7,7 @@ import cn.edu.niit.javabean.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LoginDao {
+public class   LoginDao {
 
     public User selectOne(String username) {
         User user = null;

@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author Mister-Lu
- */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

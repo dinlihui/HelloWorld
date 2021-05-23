@@ -16,12 +16,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.UUID;
 
-/**
- * @ClassName PersonalInfoServlet
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/21
- **/
+
 @WebServlet(name = "PersonalInfoServlet", urlPatterns = "/personal" + "/upload")
 @MultipartConfig()
 public class PersonalInfoServlet extends HttpServlet {

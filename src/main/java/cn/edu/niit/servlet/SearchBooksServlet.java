@@ -16,12 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * @ClassName SearchBooksServlet
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/12
- **/
+
 @WebServlet(name = "SearchBooksServlet", urlPatterns = "/book/search")
 public class SearchBooksServlet extends HttpServlet {
 

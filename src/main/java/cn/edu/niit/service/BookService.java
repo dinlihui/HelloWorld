@@ -5,12 +5,7 @@ import cn.edu.niit.javabean.Book;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * @ClassName BookService
- * @Description TODO
- * @Author Mister-Lu
- * @Date 2021/4/21
- **/
+
 public class BookService {
     private final BookDao bookDao = new BookDao();
 
