@@ -8,7 +8,7 @@
 	<style>
 		html, body {
 			width: 100%;
-			height: 100%;
+			hei ght: 100%;
 		}
 
 		.login {
