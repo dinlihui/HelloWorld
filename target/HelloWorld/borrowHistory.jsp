@@ -94,6 +94,7 @@
 			};
 		});
 
+
 		// 侧边工具栏事件
 		table.on(('tool(formFilter)'), function(obj){
 			var data = obj.data;
