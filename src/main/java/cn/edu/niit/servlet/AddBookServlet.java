@@ -43,6 +43,7 @@ public class AddBookServlet extends HttpServlet {
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
 //		doGet(request, response);
@@ -57,9 +58,7 @@ public class AddBookServlet extends HttpServlet {
         String press = request.getParameter("press");
         int num = Integer.parseInt(request.getParameter("num"));
         BookDao bookdao = new BookDao();
-        //调用函数，存入图书
-        bookdao.addBook(card,name,type,autho,press,num);
-        response.sendRedirect("/books/admin_book.jsp");
+
     }
 
 }

@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c15475-36bc-4435-8995-4dbd28809219" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/niit/dao/TypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/niit/servlet/borrowServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/niit/javabean/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/niit/servlet/CollectionBookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borrowHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borrowHistory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HelloWorld/borrowHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorld/borrowHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/niit/dao/TypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/niit/servlet/AddBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/niit/servlet/AddBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/niit/servlet/borrowServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorld.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorld.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,7 +338,8 @@
       <workItem from="1622103159221" duration="2984000" />
       <workItem from="1622118034345" duration="2381000" />
       <workItem from="1622194453413" duration="643000" />
-      <workItem from="1622254179861" duration="512000" />
+      <workItem from="1622254179861" duration="2587000" />
+      <workItem from="1622356348632" duration="3104000" />
     </task>
     <servers />
   </component>
